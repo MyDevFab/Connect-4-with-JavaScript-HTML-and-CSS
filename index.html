@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="connect4.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fredoka:wght@100;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Play Connect 4 On Line</h1>
+     <div class="rule">The 1st player chooses a tile color below and begins by clicking on one of the game columns.</div>
+     <div class="choices">
+     <button class="color-black counter-bvalue">0</button> 
+     <button class="color-white counter-wvalue" onclick="chooseColorWhite()">0</button>
+     <button class="color-green counter-gvalue" onclick="chooseColorGreen()">0</button>
+     <button class="color-blue counter-avalue" onclick="chooseColorBlue()">0</button>
+     <button class="clear" onclick="clearCounters()">Clear scores</button>
+     <h3>Align 4 tiles and win the game.</h3>
+    </div>
+    <h2 id="player"></h2>
+    <h2 id="winner"></h2>
+    <div id="board"></div>
+    <button class="bottom" id="reset">Start a new game</button>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="connect4.js"></script>
+</body>
+</html>
+
